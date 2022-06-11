@@ -1,5 +1,9 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
 .container {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
 }
 .header {
@@ -21,4 +25,40 @@
     font-size: 16px;
     color:#474B4E;
     font-weight: 400;
+}
+.cofee {
+    background: url("./img/bacgroundimg.svg"),no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    height: 600px;
+    margin-top: 30px;
+}
+.cofee-sarlavha, .cofee-pragraph, .button {
+    margin-left: 80px;
+}
+.cofee-sarlavha {
+    width: 450px;
+    padding-top: 150px;
+    color: white;
+    font-size: 80px;
+
+}
+.cofee-pragraph {
+    width: 420px;
+    color: white;
+    font-family: sans-serif;
+ margin-top: 20px;
+     
+    
+}
+.button {
+    width: 200px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 7px;
+    text-align: center;
+    background: #0E8784;
+    color: white;
 }
