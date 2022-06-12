@@ -1,64 +1,441 @@
-* {
+
+
+html {
+    
+    height: 100%;
+}
+body {
+    max-width: 1440px;
+    height: 100%;
     margin: 0;
-    padding: 0%;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-.header {
+    padding: 0;
     display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 50px;
-}
-.navbar-nav {
-    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 
 }
-.navbar-nav>.nav-item {
-    padding-left: 20px;
-   list-style: none;
-}
-.navbar-nav>.nav-item>a {
-    text-decoration: none;
-    font-size: 16px;
-    color:#474B4E;
+
+ 
+
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
     font-weight: 400;
-}
-.cofee {
-    background: url("./img/bacgroundimg.svg"),no-repeat;
-    border-radius: 10px;
-    background-size: cover;
-    height: 600px;
-    margin-top: 30px;
-}
-.cofee-sarlavha, .cofee-pragraph, .button {
-    margin-left: 80px;
-}
-.cofee-sarlavha {
-    width: 450px;
-    padding-top: 150px;
-    color: white;
-    font-size: 80px;
-
-}
-.cofee-pragraph {
-    width: 420px;
-    color: white;
-    font-family: sans-serif;
- margin-top: 20px;
-     
+    src:  url('../font/fraunces-v10-latin-regular.woff2') format('woff2'),
+         url('../font/fraunces-v10-latin-regular.woff') format('woff');
+  
+  
+  
+  
+  
+  }
+  
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src:url('../font/fraunces-v10-latin-900.woff2') format('woff2'),
+         url('../font/fraunces-v10-latin-900.woff') format('woff');
+  
+  
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1280px;
+   margin: 0 auto;
+  }
+.header>.container {
+   width: 1280px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+  
     
 }
-.button {
-    width: 200px;
+/* header boshlandi */
+
+.container>.header__logo {
+    margin-top: 44px;
+}
+.container>.header__logo>img {
+    width: 236px;
+    height: 26px;
+}
+.header__nav {
+    display: flex;
     margin-top: 50px;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 900;
+}
+.header__item {
+    list-style: none;
+}
+.header__item+.header__item {
+    
+    margin-left: 32px;
+    
+}
+.header__item>.header__link {
+    text-decoration: none;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    color: black;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+     color: #83888F;
+}
+/* header tugadi */
+
+
+
+/* main boshlandi */
+.main {
+    margin-bottom: 136px;
+}
+.main>.container {
+    height: 600px;
+    background: url('./img/bacgroundimg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 7px;
-    text-align: center;
-    background: #0E8784;
+}
+.coffe {
+    margin-left: 85px;
+}
+.coffe__sarlavha {
+    width: 495px;
+    height: 145px;
+    padding-top: 117px;
+  
     color: white;
+    font-style: normal;
+font-weight: 900;
+font-size: 72px;
+line-height: 72px;
+color: #FEFCF7;
+
+}
+.coffe__paragraph {
+    width: 445px;
+    height: 78px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #FEFCF7;
+mix-blend-mode: normal;
+opacity: 0.8;
+padding-top: 100px;
+}
+
+.coffe__link {
+    display: inline-block;
+    width: 217px;
+   margin-top: 120px;
+    font-size: 20px;
+    border: 1px solid #0E8784;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+      background: #0E8784;
+      color: white;
+      text-decoration: none;
+
+}
+
+/* main qismi tugadi */
+
+/* section--collection boshlandi */
+.collection {
+    width: 1112px;
+    margin: 0 auto;
+    height: 525px;
+    background-image: url('./img/Group13.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+  
+}
+.collection__ul {
+    display: flex;
+    padding-top: 126px;
+}
+.collection__item {
+    list-style: none;
+}
+.collection__item+.collection__item {
+   
+    margin-left: 30px;
+}
+.collection__card {
+    width: 255px;
+    height: 193px;
+    display: flex;
+    
+}
+.collection__malumot {
+    width: 240px;
+    height: 134px;
+    margin-top: 70px;
+}
+.collection__sarlavha {
+    text-align: center;
+}
+.collection__paragraph {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+
+text-align: center;
+
+color: #333D4B;
+
+}
+
+
+/* section--collection tugadi*/
+
+
+/* section--choose qismi boshlandi */
+.choose {
+  
+    width: 100%;
+     min-height: 900px;
+     margin-top: 201px;
+     
+}
+.choose>.container {
+    height: 590px;
+    background:  #2C343E;
+    margin: 0 auto;
+   border-radius: 10px;
+ 
+}
+
+
+.choose__us {
+    width: 540px;
+    margin: 0 auto;
+
+}
+.choose__sarlavha, .choose__paragraph {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+}
+.choose__sarlavha {
+
+   font-style: normal;
+   font-weight: 900;
+   font-size: 40px;
+   line-height: 48px;
+padding-top: 100px;
+   
+   text-align: center;
+   
+   color: #FEFCF7;
+
+}
+.choose__paragraph {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+margin-top: 32px;
+
+
+text-align: center;
+
+color: #FEFCF7;
+
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+.choose__card {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 86px;
+    margin-bottom: 200px;
+}
+.choose__nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+.choose__item {
+    width: 340px;
+    height: 382px;
+    list-style: none;
+    background: #0E8784;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+  
+
+}
+.choose__item{
+margin-right: 30px;
+}
+.choose__img {
+    padding-top: 72px;
+    width: 80px;
+    height: 150px;
+    
+    
+}
+
+.choose__card--sarlavha, .choose__card--paragraph {
+    padding-top: 20px;
+    width: 253px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+.choose__card--sarlavha {
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #FEFCF7;
+padding-top: 56px;
+}
+.choose__card--paragraph {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #FEFCF7;
+}
+/* section--choose tugadi */
+
+
+/* section--works boshlandi */
+.works {
+    min-height: 900px;
+}
+.works__container {
+ width: 1190px;
+ margin: 0 auto;
+}
+.how__it {
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+color: #83888F;
+}
+.aylana {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+   
+  
+
+}
+.box {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    background-color: white;
+}
+.works__card {
+    margin-top: 70px;
+}
+.works__nav {
+    display: flex;
+   
+}
+.works__item {
+    width: 270px;
+    height: 130px;
+    list-style: none;
+ 
+
+   
+}
+.works__item+.works__item {
+    margin-left: 120px;
+}
+.works__paragraph {
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+
+color: #333D4B;
+}
+.works__sarlavha {
+    font-family: 'Fraunces 9pt';
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 36px;
+color: #333D4B;
+}
+.works--link {
+    margin-top: 300px;
+    margin-left: 40px;
+}
+
+/* section-works tugadi */
+
+
+
+/* footer boshlandi */
+footer>.container {
+    background:  #2C343E;
+}
+.footer__container {
+    width: 1190px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__container>.header__logo>img {
+    background-size: contain;
+    width: 220px;
+    height: 24px;
+}
+
+.footer__container>.header__navbar {
+    margin-top: -30px;
+}
+.footer__navbar {
+    display: flex;
+}
+.footer__item {
+    list-style-type: none;
+    padding: 20px;
+}
+.footer__link {
+    color: white;
+}
+.footer__link>i {
+    font-size: 25px;
 }
