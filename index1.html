@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./main1.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,16 +17,19 @@
         <div class="header__logo">
             <img src="./img/header-logo.svg" alt="temlate">
         </div>
+          <button class="header__button" type="button">
+           &#9776
+          </button>
         <nav class="header__navbar">
             <ul class="header__nav">
              <li class="header__item">
-                 <a href="" class="header__link">home</a>
+                 <a href="#" class="header__link">home</a>
              </li>
              <li class="header__item">
-                 <a href="" class="header__link">about us</a>
+                 <a href="about.html" class="header__link">about us</a>
              </li>
              <li class="header__item">
-                 <a href="" class="header__link">cteate your plan</a>
+                 <a href="#" class="header__link">create your plan</a>
              </li>
          
             </ul>
@@ -36,7 +41,7 @@
 
 
   <!-- Main  boshlandi -->
-  <main class="main">
+   <main class="main">
     <div class="container">
         <div class="coffe">
          <h1 class="coffe__sarlavha">
@@ -48,7 +53,8 @@
          <a   href="#" class="coffe__link">create your plan</a>
         </div>
     </div>
-  </main>
+  </main> 
+  <!-- MAIN QISMI TUGADI -->
 
 
   <!-- section--collection qismi boshlandi -->
@@ -124,7 +130,7 @@
 
 
   <!-- section--choose qismi boshlandi -->
-  <section class="choose">
+   <section class="choose">
     <div class="container">
         <div class="choose__us">
             <h1 class="choose__sarlavha">
@@ -138,36 +144,45 @@
             <ul class="choose__nav">
                 <li class="choose__item">
                     <img src="./img/Shape.png" class="choose__img" alt="">
-                    <h1 class="choose__card--sarlavha">
-                        Best quality
-                    </h1>
-                    <p class="choose__card--paragraph">
-                        Discover an endless variety of the world’s best artisan coffee from each of our roasters.
-                    </p>
+                    <div class="choose__box">
+                        <h1 class="choose__card--sarlavha">
+                            Best quality
+                        </h1>
+                        <p class="choose__card--paragraph">
+                            Discover an endless variety of the world’s best artisan coffee from each of our roasters.
+                        </p>
+                    </div>
+                 
 
                 </li>
                 <li class="choose__item">
                     <img src="./img/Combined Shape.png" class="choose__img" alt="">
-                    <h1 class="choose__card--sarlavha">
-                        Exclusive benefits
-                    </h1>
-                    <p class="choose__card--paragraph">
-                        Special offers and swag when you subscribe, including 30% off your first shipment..
-                    </p>
+                    <div class="choose__box">
+                        <h1 class="choose__card--sarlavha">
+                            Exclusive benefits
+                        </h1>
+                        <p class="choose__card--paragraph">
+                            Special offers and swag when you subscribe, including 30% off your first shipment..
+                        </p>
+                    </div>
+               
                 </li>
                 <li class="choose__item">
                     <img src="./img/Combined Shape (1).png" class="choose__img" alt="">
-                    <h1 class="choose__card--sarlavha">
-                        Free shipping
-                    </h1>
-                    <p class="choose__card--paragraph">
-                        We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
-                    </p>
+                    <div class="choose__box">
+                        <h1 class="choose__card--sarlavha">
+                            Free shipping
+                        </h1>
+                        <p class="choose__card--paragraph">
+                            We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.
+                        </p>
+                    </div>
+               
                 </li>
             </ul>
         </div>
     </div>
-  </section>
+  </section> 
   <!-- section--choose tugadi -->
 
 
@@ -176,14 +191,14 @@
     <div class="container">
         <div class="works__container">
             <h3 class="how__it">How it works</h3>
-            <div class="aylana">
+            <div class="aylana" style=" width: 100%; max-width: 790px;">
                 <div class="box"></div>
                 <div class="box"></div>
                 <div class="box"></div>
-                <div class="box1"></div>
+                
             
             </div>
-            <hr style="font-weight: 900; margin-top: -15px; margin-left: 10px; width: 790px; border-bottom: 6px; background:red;">
+            <div class="chiziq" style="font-weight: 900; margin-top: -15px; margin-left: 10px; width: 100%; max-width: 750px; border-bottom: 1px solid red; background:red;"> </div>
         </div>
         <div class="works__card">
             <ul class="works__nav">
@@ -214,7 +229,10 @@
                         </p>
                 </li>
             </ul>
-            <a href="#" class="coffe__link works--link">create your plan</a>
+            <div class="work--link">
+                <a href="#" class="coffe__link works--link">create your plan</a>
+            </div>
+            
         </div>
       
      
@@ -227,22 +245,22 @@
 
 
   <!-- footer boshlandi -->
-  <footer>
+  <footer class="footer">
     <div class="container">
         <div class="footer__container">
-            <div class="header__logo">
+            <div class="header__logo footer--logo">
                 <img src="./img/cofyl-ogo.png" alt="temlate">
             </div>
-            <nav class="header__navbar">
-                <ul class="header__nav">
-                 <li class="header__item">
-                     <a href="" class="header__link">home</a>
+            <nav class="header__navbar footer--navbar">
+                <ul class="header__nav  footer--nav">
+                 <li class="header__item footer--item">
+                     <a href="" class="header__link footer--link">home</a>
                  </li>
-                 <li class="header__item">
-                     <a href="" class="header__link">about us</a>
+                 <li class="header__item footer--item">
+                     <a href="" class="header__link  footer--link">about us</a>
                  </li>
-                 <li class="header__item">
-                     <a href="" class="header__link">cteate your plan</a>
+                 <li class="header__item  footer--item">
+                     <a href="" class="header__link  footer--link">create your plan</a>
                  </li>
              
                 </ul>
@@ -265,6 +283,6 @@
 
   
    
- 
+ <script src="./js/main.js"></script>
 </body>
 </html>

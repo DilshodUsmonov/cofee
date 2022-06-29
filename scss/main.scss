@@ -1,19 +1,30 @@
-
+@charset "UTF-8";
+@import "header";
+@import "minmain";
+@import "collection";
+@import "choose";
+@import "works";
+@import "footer";
 
 html {
-    
+
     height: 100%;
+    
 }
 body {
+    width: 100%;
     max-width: 1440px;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
 
 }
+
+
+
 
  
 
@@ -46,27 +57,38 @@ body {
     box-sizing: border-box;
   }
   .container {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
    margin: 0 auto;
+   padding: 0 20px;
+  }
+  /* header boshlandi */
+  .header {
+    position: relative;
   }
 .header>.container {
-   width: 1280px;
+    width: 100%;
+   max-width: 1280px;
    margin: 0 auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
  
-  
-    
 }
-/* header boshlandi */
+
 
 .container>.header__logo {
     margin-top: 44px;
+    display: flex;
+    
 }
 .container>.header__logo>img {
-    width: 236px;
+    width: 100%;
+    max-width: 236px;
     height: 26px;
+}
+.header__navbar {
+    position: relative;
 }
 .header__nav {
     display: flex;
@@ -74,6 +96,7 @@ body {
 }
 .header__item {
     list-style: none;
+  
 }
 .header__item+.header__item {
     
@@ -91,6 +114,12 @@ body {
     text-transform: uppercase;
      color: #83888F;
 }
+
+.header__button {
+    display: none;
+}
+
+
 /* header tugadi */
 
 
@@ -100,8 +129,10 @@ body {
     margin-bottom: 136px;
 }
 .main>.container {
+    width: 100%;
+    max-width: 1240px;
     height: 600px;
-    background: url('./img/bacgroundimg.svg');
+    background: url('/img/bacgroundimg.svg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 7px;
@@ -110,7 +141,8 @@ body {
     margin-left: 85px;
 }
 .coffe__sarlavha {
-    width: 495px;
+    width: 100%;
+    max-width: 495px;
     height: 145px;
     padding-top: 117px;
   
@@ -123,7 +155,8 @@ color: #FEFCF7;
 
 }
 .coffe__paragraph {
-    width: 445px;
+    width: 100%;
+   max-width: 445px;
     height: 78px;
     font-style: normal;
 font-weight: 400;
@@ -157,10 +190,11 @@ padding-top: 100px;
 
 /* section--collection boshlandi */
 .collection {
-    width: 1112px;
+    width: 100%;
+    max-width: 1112px;
     margin: 0 auto;
     height: 525px;
-    background-image: url('./img/Group13.jpg');
+    background-image: url('/img/Group13.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 50px;
@@ -175,16 +209,18 @@ padding-top: 100px;
 }
 .collection__item+.collection__item {
    
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .collection__card {
-    width: 255px;
+    width: 100%;
+    max-width: 255px;
     height: 193px;
     display: flex;
     
 }
 .collection__malumot {
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     height: 134px;
     margin-top: 70px;
 }
@@ -226,12 +262,14 @@ color: #333D4B;
 
 
 .choose__us {
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
     margin: 0 auto;
 
 }
 .choose__sarlavha, .choose__paragraph {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
    
@@ -267,7 +305,8 @@ opacity: 0.8;
 }
 
 .choose__card {
-    width: 1150px;
+    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     margin-top: 86px;
     margin-bottom: 200px;
@@ -278,7 +317,8 @@ opacity: 0.8;
 
 }
 .choose__item {
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 382px;
     list-style: none;
     background: #0E8784;
@@ -293,16 +333,18 @@ opacity: 0.8;
 margin-right: 30px;
 }
 .choose__img {
-    padding-top: 72px;
-    width: 80px;
+  width: 100%;
+    max-width: 80px;
     height: 150px;
+    padding-top: 72px;
     
     
 }
 
 .choose__card--sarlavha, .choose__card--paragraph {
+    width: 100%;
+    max-width: 253px;
     padding-top: 20px;
-    width: 253px;
     margin: 0 auto;
     text-align: center;
    
@@ -334,7 +376,8 @@ color: #FEFCF7;
     min-height: 900px;
 }
 .works__container {
- width: 1190px;
+    width: 100%;
+ max-width: 1190px;
  margin: 0 auto;
 }
 .how__it {
@@ -354,7 +397,8 @@ color: #83888F;
 
 }
 .box {
-    width: 30px;
+    width: 100%;
+    max-width: 30px;
     height: 30px;
     border: 2px solid #0E8784;
     border-radius: 50%;
@@ -368,7 +412,8 @@ color: #83888F;
    
 }
 .works__item {
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
     height: 130px;
     list-style: none;
  
@@ -409,7 +454,8 @@ footer>.container {
     background:  #2C343E;
 }
 .footer__container {
-    width: 1190px;
+    width: 100%;
+    max-width: 1190px;
     height: 120px;
     margin: auto;
     display: flex;
@@ -419,7 +465,8 @@ footer>.container {
 }
 .footer__container>.header__logo>img {
     background-size: contain;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     height: 24px;
 }
 
@@ -432,6 +479,7 @@ footer>.container {
 .footer__item {
     list-style-type: none;
     padding: 20px;
+
 }
 .footer__link {
     color: white;
@@ -439,3 +487,6 @@ footer>.container {
 .footer__link>i {
     font-size: 25px;
 }
+
+
+// media  qismi boshlandi

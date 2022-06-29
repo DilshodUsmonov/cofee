@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import "header";
+@import "coffe";
+@import "commitment";
+@import "quality";
+@import "our";
+@import "footer";
+
+html {
+
+    height: 100%;
+    
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+
+
+
+ 
+
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src:  url('../font/fraunces-v10-latin-regular.woff2') format('woff2'),
+         url('../font/fraunces-v10-latin-regular.woff') format('woff');
+  
+  
+  
+  
+  
+  }
+  
+  @font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src:url('../font/fraunces-v10-latin-900.woff2') format('woff2'),
+         url('../font/fraunces-v10-latin-900.woff') format('woff');
+  
+  
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 20px;
+  }
+//   header qismi boshlandi
+.header {
+    position: relative;
+    margin-bottom: 55px;
+  }
+.header>.container {
+    width: 100%;
+   max-width: 1280px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+}
+
+
+.container>.header__logo {
+    margin-top: 44px;
+    display: flex;
+    
+}
+.container>.header__logo>img {
+    width: 100%;
+    max-width: 236px;
+    height: 26px;
+}
+.header__navbar {
+    position: relative;
+}
+.header__nav {
+    display: flex;
+    margin-top: 50px;
+}
+.header__item {
+    list-style: none;
+  
+}
+.header__item+.header__item {
+    
+    margin-left: 32px;
+    
+}
+.header__item>.header__link {
+    text-decoration: none;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    color: black;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+     color: #83888F;
+}
+
+.header__button {
+    display: none;
+}
+/* header tugadi */
+
+
+
+/* main boshlandi */
+.main {
+    margin-bottom: 136px;
+}
+.main>.container {
+    height: 450px;
+    background: url('/aboutimg/about-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+.coffe {
+    margin-left: 85px;
+}
+.coffe__sarlavha {
+    width: 100%;
+    max-width: 188px;
+    height: 48px;
+    padding-top: 117px;
+  
+    color: white;
+    font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 72px;
+color: #FEFCF7;
+
+}
+.coffe__paragraph {
+    width: 100%;
+    max-width: 445px;
+    height: 108px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #FEFCF7;
+mix-blend-mode: normal;
+opacity: 0.8;
+margin-top: 80px;
+}
+
+.coffe__link {
+    display: inline-block;
+    width: 100%;
+   max-width: 217px;
+   margin-top: 120px;
+    font-size: 20px;
+    border: 1px solid #0E8784;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+      background: #0E8784;
+      color: white;
+      text-decoration: none;
+
+}
+
+/* main qismi tugadi */
+
+// section commitment qismi boshlandi
+.commitment {
+   min-height: 750px;
+
+}
+.container1 {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+.commitment__card {
+    width: 100%;
+    max-width: 445px;
+    height: 520px;
+    border-radius: 8px;
+    
+}
+.commitment__sarlavha {
+    padding-top: 90px;
+}
+
+.commitment__paragraph {
+    width: 100%;
+    max-width: 540px;
+    height: 260px;
+    font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #333D4B;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.commitment__title {
+ width: 100%;   
+max-width: 357px;
+height: 48px;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+
+
+
+color: #333D4B;
+}
+.Uncompromising {
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.Uncompromising>.container {
+    height: 450px;
+    background:#293039;
+    border-radius: 8px;
+}
+.quality__card {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.quality {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.quality__title {
+    width: 100%;
+    max-width: 517px;
+    height: 48px;
+    margin-top: 100px;  
+    font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 48px;
+color: #FEFCF7;
+
+}
+.quality__paragraph {
+    width: 100%;
+   max-width: 540px;
+    height: 130px;
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #FEFCF7;
+mix-blend-mode: normal;
+opacity: 0.8;
+
+   
+}
+.quality__images {
+    width: 100%;
+    max-width: 445px;
+    height: 474px;
+    margin-top: -80px;
+    border-radius: 8px;
+ margin-right: 10px;
+}
+.our {
+    height: 100%;
+    margin-top: 130px;
+    margin-bottom: 180px;
+}
+.our>.container1 {
+    display: flex;
+    flex-direction: column;
+
+}
+.our__navbar {
+   
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.our__title {
+    width: 100%;
+    max-width: 255px;
+    height: 32px;
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 32px;
+    color: #83888F;
+}
+.our__item {
+    list-style: none;
+}
+.our__item+.our__item{
+    margin-left: 10px;
+}
+.our__item__title {
+    font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 36px;
+color: #333D4B;
+}
+.our__item__paragraph {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #333D4B;
+
+}
+.our__images {
+    margin-bottom: 20px;
+}
+
+
+
+/* footer boshlandi */
+footer>.container {
+    background:  #2C343E;
+}
+.footer__container {
+    width: 100%;
+    max-width: 1190px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__container>.header__logo>img {
+    background-size: contain;
+    width: 100%;
+    max-width: 220px;
+    height: 24px;
+}
+
+.footer__container>.header__navbar {
+    margin-top: -30px;
+}
+.footer__navbar {
+    display: flex;
+}
+.footer__item {
+    list-style-type: none;
+    padding: 20px;
+}
+.footer__link {
+    color: white;
+}
+.footer__link>i {
+    font-size: 25px;
+}
+
+
+
